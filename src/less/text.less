@@ -3,7 +3,7 @@
 /*
  * @Author: bmqy
  * @Date: 2015-11-30 00:00:00
- * @LastEditTime: 2020-04-02 12:08:09
+ * @LastEditTime: 2020-04-02 17:14:01
  * @Description: PC端css模板：文本
  */
 
@@ -23,6 +23,7 @@ h3 {
   font-weight: 600;
 }
 .text {
+  /* 尺寸 */
   &-xs {
     font-size: ceil(@baseFontSize * .625);
   }
@@ -35,6 +36,7 @@ h3 {
   &-xl {
     font-size: ceil(@baseFontSize * 1.125);
   }
+  /* 对齐 */
   &-left {
     text-align: left;
   }
@@ -52,6 +54,7 @@ h3 {
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+  /* 文字颜色 */
   &-white {
     color: @white;
   }
@@ -84,7 +87,7 @@ h3 {
   }
   &-black {
     background-color: @black;
-    color: @black;
+    color: @white;
   }
   &-red {
     background-color: @red;
@@ -92,7 +95,7 @@ h3 {
   }
   &-blue {
     background-color: @blue;
-    color: @black;
+    color: @white;
   }
   &-orange {
     background-color: @orange;

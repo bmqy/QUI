@@ -2,9 +2,9 @@
   <div class="container-full">
     <div class="container w1200">
       <h1>文本演示</h1>
-      <div class="margin-top bg-gray">
+      <div class="margin-top">
         <p
-          v-for="(item, index) in colors"
+          v-for="(item, index) in theColors"
           :key="index"
           :class="`text-${item.name}`"
         >
@@ -12,21 +12,35 @@
         </p>
       </div>
       <div class="margin-top">
-        <p class="text-gray text-sm">我是一段灰色的文字</p>
-        <p class="text-black text-sm">这是演示文字</p>
-        <p class="text-red text-sm">这是演示文字</p>
-        <p class="text-blue text-sm">这是演示文字</p>
-        <p class="text-orange text-sm">这是演示文字</p>
-        <p class="bg-orange text-sm">这是演示文字</p>
-        <p class="bg-gray text-sm">这是演示文字</p>
+        <p
+          v-for="(item, index) in theColors"
+          :key="index"
+          :class="`bg-${item.name}`"
+        >
+          {{ `我是一段${item.title}背景的文字` }}
+        </p>
       </div>
       <div class="margin-top">
-        <p class="bg-white text-xs">这是演示文字</p>
-        <p class="text-gray text-sm">这是演示文字</p>
-        <p class="text-black">这是演示文字</p>
-        <p class="text-red text-lg">这是演示文字</p>
-        <p class="text-blue text-xl bold">这是演示文字</p>
-        <p class="text-orange bold text-lg">这是演示文字</p>
+        <p
+          v-for="(item, index) in sizes"
+          :key="index"
+          :class="[`text-${item.name}`, `bg-${theColors[index].name}`]"
+        >
+          {{ `这是${item.title}演示文字` }}
+        </p>
+      </div>
+      <div class="margin-top">
+        <p
+          v-for="(item, index) in theColors"
+          :key="index"
+          class="text-ellipsis"
+          style="width:235px;"
+          :class="`bg-${item.name}`"
+        >
+          {{
+            `我是一段单行文本超出隐藏的文字我是一段单行文本超出隐藏的文字我是一段单行文本超出隐藏的文字`
+          }}
+        </p>
       </div>
     </div>
   </div>
@@ -36,6 +50,17 @@
 export default {
   data() {
     return {};
+  },
+  computed: {
+    theColors: function() {
+      let arr = [];
+      this.colors.map(function(e, i) {
+        if (i > 0) {
+          arr.push(e);
+        }
+      });
+      return arr;
+    }
   }
 };
 </script>

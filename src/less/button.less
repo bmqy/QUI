@@ -2,7 +2,7 @@
 /*
  * @Author: bmqy
  * @Date: 2015-11-30 00:00:00
- * @LastEditTime: 2020-04-02 11:55:11
+ * @LastEditTime: 2020-04-02 15:31:31
  * @Description: PC端css模板：button组件
  */
 
@@ -22,6 +22,7 @@
   &:hover {
     text-decoration: none;
   }
+  /* 尺寸 */
   &-sm {
     padding: 0 10px;
     height: 24px;
@@ -34,6 +35,7 @@
     line-height: 40px;
     font-size: 16px;
   }
+  /* 块状 */
   &-block {
     display: block;
     height: 40px;
@@ -43,6 +45,7 @@
       border-radius: 10px;
     }
   }
+  /* 按钮背景 */
   &.bg-white {
     background-color: @white;
     color: @gray;
@@ -85,6 +88,7 @@
       background-color: lighten(@blue, 10%);
     }
   }
+  /* 线框按钮 */
   &.line {
     &-white {
       .border;

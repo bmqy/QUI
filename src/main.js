@@ -32,6 +32,29 @@ Vue.prototype.colors = [
   }
 ];
 
+Vue.prototype.sizes = [
+  {
+    title: "超小",
+    name: "xs"
+  },
+  {
+    title: "小",
+    name: "sm"
+  },
+  {
+    title: "普通",
+    name: ""
+  },
+  {
+    title: "大",
+    name: "lg"
+  },
+  {
+    title: "超大",
+    name: "xl"
+  }
+];
+
 new Vue({
   router,
   store,

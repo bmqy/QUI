@@ -1,9 +1,9 @@
-// autoprefixer: > 1%; last 5 Chrome versions; not ie 6-7, compress:false, sourceMap: false
+// out: false
 
 /*
  * @Author: bmqy
  * @Date: 2015-11-30 00:00:00
- * @LastEditTime: 2020-04-02 11:46:00
+ * @LastEditTime: 2020-04-02 17:48:48
  * @Description: PC端css模板
  */
 
@@ -18,12 +18,11 @@
 @import url(./article.less);
 
 /* 通用样式 */
-html {
-	font-size: @baseFontSize;
-}
+html,
 body {
 	font-family: @baseFontFamily;
 	font-size: @baseFontSize * .875;
+	line-height: @baseLineHeight;
 }
 body,
 h1,
@@ -35,6 +34,9 @@ dd,
 p {
   margin: 0;
   padding: 0;
+}
+p {
+  margin-bottom: 10px;
 }
 button,
 select,
@@ -127,6 +129,51 @@ a {
     }
     &-xl {
       margin-top: 30px;
+    }
+  }
+  &-left {
+    margin-left: 15px;
+    &-xs {
+      margin-left: 5px;
+    }
+    &-sm {
+      margin-left: 10px;
+    }
+    &-lg {
+      margin-left: 20px;
+    }
+    &-xl {
+      margin-left: 30px;
+    }
+  }
+  &-right {
+    margin-right: 15px;
+    &-xs {
+      margin-right: 5px;
+    }
+    &-sm {
+      margin-right: 10px;
+    }
+    &-lg {
+      margin-right: 20px;
+    }
+    &-xl {
+      margin-right: 30px;
+    }
+  }
+  &-bottom {
+    margin-bottom: 15px;
+    &-xs {
+      margin-bottom: 5px;
+    }
+    &-sm {
+      margin-bottom: 10px;
+    }
+    &-lg {
+      margin-bottom: 20px;
+    }
+    &-xl {
+      margin-bottom: 30px;
     }
   }
 }
