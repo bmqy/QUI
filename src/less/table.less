@@ -1,0 +1,52 @@
+// out: false
+
+/*
+ * @Author: bmqy
+ * @Date: 2015-11-30 00:00:00
+ * @LastEditTime: 2020-04-02 10:28:44
+ * @Description: PC端css模板：table表格
+ */
+
+/* table */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  th,
+  td {
+    box-sizing: border-box;
+  }
+}
+
+.table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  .border;
+  thead {
+    background-color: #eee;
+    font-weight: bolder;
+    line-height: 38px;
+    th {
+      line-height: 35px;
+    }
+  }
+  th {
+    background-color: #eee;
+    font-weight: bolder;
+  }
+  th,
+  td {
+    padding: 0 10px;
+    color: #333;
+    box-sizing: border-box;
+    vertical-align: middle;
+    .border;
+  }
+
+  &.no-border {
+    .no-border;
+    th,
+    td {
+      .no-border;
+    }
+  }
+}

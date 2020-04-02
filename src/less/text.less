@@ -3,7 +3,7 @@
 /*
  * @Author: bmqy
  * @Date: 2015-11-30 00:00:00
- * @LastEditTime: 2020-04-02 10:25:04
+ * @LastEditTime: 2020-04-02 11:50:30
  * @Description: PC端css模板：文本
  */
 
@@ -24,16 +24,16 @@ h3 {
 }
 .text {
   &-xs {
-    font-size: 10px;
+    font-size: ceil(@baseFontSize * .625);
   }
   &-sm {
-    font-size: 12px;
+    font-size: ceil(@baseFontSize * .75);
   }
   &-lg {
-    font-size: 16px;
+    font-size: ceil(@baseFontSize * 1);
   }
   &-xl {
-    font-size: 18px;
+    font-size: ceil(@baseFontSize * 1.125);
   }
   &-left {
     text-align: left;
@@ -79,8 +79,8 @@ h3 {
     color: @black;
   }
   &-gray {
-    background-color: @gray;
-    color: @white;
+    background-color: #f0f0f0;
+    color: @gray;
   }
   &-black {
     background-color: @black;
