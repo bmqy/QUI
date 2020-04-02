@@ -1,0 +1,91 @@
+// out: false
+
+/*
+ * @Author: bmqy
+ * @Date: 2015-11-30 00:00:00
+ * @LastEditTime: 2020-04-02 10:27:26
+ * @Description: PC端css模板：表单
+ */
+
+/* 表单 */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="email"],
+input[type="file"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+  .border;
+  box-sizing: border-box;
+  padding: 5px;
+  outline: none;
+}
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="email"],
+input[type="file"],
+input[type="date"],
+input[type="time"],
+textarea {
+  &:focus {
+    border-color: lighten(@baseBorderColor, 30%);
+  }
+}
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="email"],
+input[type="file"],
+input[type="date"],
+input[type="time"],
+select {
+  height: 30px;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline-block;
+  .border;
+  vertical-align: middle;
+  margin-top: -3px;
+}
+textarea {
+  resize: none;
+}
+.input-row {
+  margin-bottom: 15px;
+  select,
+  input[type="checkbox"],
+  input[type="radio"] {
+    width: auto;
+    display: inline-block;
+  }
+}
+.label {
+  min-width: 80px;
+  margin-right: 5px;
+  display: inline-block;
+  text-align: right;
+  color: #666;
+  vertical-align: top;
+  .must {
+    margin-right: 2px;
+    font-size: inherit;
+    color: red;
+    vertical-align: top;
+    display: inline-block;
+  }
+}
+.input-tips {
+  margin-left: 20px;
+  display: inline-block;
+  vertical-align: top;
+}

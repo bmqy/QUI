@@ -1,0 +1,210 @@
+// out: false
+/*
+ * @Author: bmqy
+ * @Date: 2015-11-30 00:00:00
+ * @LastEditTime: 2020-04-02 09:46:07
+ * @Description: PC端css模板：button组件
+ */
+
+.btn {
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 0 15px;
+  height: 32px;
+  display: inline-block;
+  line-height: 32px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  user-select: none;
+  cursor: pointer;
+  .border-box;
+  &:hover {
+    text-decoration: none;
+  }
+  &-sm {
+    padding: 0 10px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+  }
+  &-lg {
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+  }
+  &-block {
+    display: block;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    &.radius {
+      border-radius: 10px;
+    }
+  }
+  &.bg-white {
+    background-color: @white;
+    color: @gray;
+    &:hover {
+      background-color: lighten(@white, 10%);
+    }
+  }
+  &.bg-gray {
+    background-color: @gray;
+    color: @white;
+    &:hover {
+      background-color: lighten(@gray, 10%);
+    }
+  }
+  &.bg-black {
+    background-color: @black;
+    color: @white;
+    &:hover {
+      background-color: lighten(@black, 10%);
+    }
+  }
+  &.bg-red {
+    background-color: @red;
+    color: @white;
+    &:hover {
+      background-color: lighten(@red, 10%);
+    }
+  }
+  &.bg-orange {
+    background-color: @orange;
+    color: @white;
+    &:hover {
+      background-color: lighten(@orange, 10%);
+    }
+  }
+  &.bg-blue {
+    background-color: @blue;
+    color: @white;
+    &:hover {
+      background-color: lighten(@blue, 10%);
+    }
+  }
+  &.line {
+    &-white {
+      .border;
+      line-height: 30px;
+      border-color: @white;
+      color: @gray;
+      &:hover {
+        border-color: lighten(@white, 10%);
+        color: lighten(@gray, 10%);
+      }
+      &.btn-sm {
+        line-height: 22px;
+      }
+      &.btn-lg {
+        line-height: 38px;
+      }
+      &.btn-block {
+        font-size: 16px;
+        line-height: 40px;
+      }
+    }
+    &-gray {
+      .border;
+      line-height: 30px;
+      border-color: @gray;
+      color: @gray;
+      &:hover {
+        border-color: lighten(@gray, 10%);
+        color: lighten(@gray, 10%);
+      }
+      &.btn-sm {
+        line-height: 22px;
+      }
+      &.btn-lg {
+        line-height: 38px;
+      }
+      &.btn-block {
+        font-size: 16px;
+        line-height: 40px;
+      }
+    }
+    &-black {
+      .border;
+      line-height: 30px;
+      border-color: @black;
+      color: @black;
+      &:hover {
+        border-color: lighten(@black, 10%);
+        color: lighten(@black, 10%);
+      }
+      &.btn-sm {
+        line-height: 22px;
+      }
+      &.btn-lg {
+        line-height: 38px;
+      }
+      &.btn-block {
+        font-size: 16px;
+        line-height: 40px;
+      }
+    }
+    &-red {
+      .border;
+      line-height: 30px;
+      border-color: @red;
+      color: @red;
+      &:hover {
+        border-color: lighten(@red, 10%);
+        color: lighten(@red, 10%);
+      }
+      &.btn-sm {
+        line-height: 22px;
+      }
+      &.btn-lg {
+        line-height: 38px;
+      }
+      &.btn-block {
+        font-size: 16px;
+        line-height: 40px;
+      }
+		}
+    &-blue {
+      .border;
+      line-height: 30px;
+      border-color: @blue;
+      color: @blue;
+      &:hover {
+        border-color: lighten(@blue, 10%);
+        color: lighten(@blue, 10%);
+      }
+      &.btn-sm {
+        line-height: 22px;
+      }
+      &.btn-lg {
+        line-height: 38px;
+      }
+      &.btn-block {
+        font-size: 16px;
+        line-height: 40px;
+      }
+    }
+    &-orange {
+      .border;
+      line-height: 30px;
+      border-color: @orange;
+      color: @orange;
+      &:hover {
+        border-color: lighten(@orange, 10%);
+        color: lighten(@orange, 10%);
+      }
+      &.btn-sm {
+        line-height: 22px;
+      }
+      &.btn-lg {
+        line-height: 38px;
+      }
+      &.btn-block {
+        font-size: 16px;
+        line-height: 40px;
+      }
+    }
+  }
+}

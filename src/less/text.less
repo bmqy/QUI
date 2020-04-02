@@ -1,0 +1,101 @@
+// out: false
+
+/*
+ * @Author: bmqy
+ * @Date: 2015-11-30 00:00:00
+ * @LastEditTime: 2020-04-02 10:25:04
+ * @Description: PC端css模板：文本
+ */
+
+/* 文本 */
+h1,
+h2 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 36px;
+}
+h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 36px;
+}
+.bold {
+  font-weight: bold;
+}
+.text {
+  &-xs {
+    font-size: 10px;
+  }
+  &-sm {
+    font-size: 12px;
+  }
+  &-lg {
+    font-size: 16px;
+  }
+  &-xl {
+    font-size: 18px;
+  }
+  &-left {
+    text-align: left;
+  }
+  &-center {
+    text-align: center;
+  }
+  &-right {
+    text-align: right;
+  }
+  &-justify {
+    text-align: justify;
+  }
+  &-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &-white {
+    color: @white;
+  }
+  &-gray {
+    color: @gray;
+  }
+  &-black {
+    color: @black;
+  }
+  &-red {
+    color: @red;
+  }
+  &-blue {
+    color: @blue;
+  }
+  &-orange {
+    color: @orange;
+  }
+}
+
+/* 背景色 */
+.bg {
+  &-white {
+    background-color: @white;
+    color: @black;
+  }
+  &-gray {
+    background-color: @gray;
+    color: @white;
+  }
+  &-black {
+    background-color: @black;
+    color: @black;
+  }
+  &-red {
+    background-color: @red;
+    color: @white;
+  }
+  &-blue {
+    background-color: @blue;
+    color: @black;
+  }
+  &-orange {
+    background-color: @orange;
+    color: @white;
+  }
+}

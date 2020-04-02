@@ -1,0 +1,82 @@
+// out: false
+/*
+ * @Author: bmqy
+ * @Date: 2015-11-30 00:00:00
+ * @LastEditTime: 2020-04-02 09:42:23
+ * @Description: PC端css模板：边框
+ */
+
+//基础变量
+@baseBorderWidth: 1px;
+@baseBorderColor: #e6e6e6;
+
+.border-box {
+  box-sizing: border-box;
+}
+
+//实心边框
+.no-border {
+  border: none !important;
+}
+.border(@direction, @type) when (@direction=border) {
+  border: @baseBorderWidth @type @baseBorderColor;
+}
+.border(@direction, @type) when (@direction=top) {
+  border-top: @baseBorderWidth @type @baseBorderColor;
+}
+.border(@direction, @type) when (@direction=left) {
+  border-left: @baseBorderWidth @type @baseBorderColor;
+}
+.border(@direction, @type) when (@direction=right) {
+  border-right: @baseBorderWidth @type @baseBorderColor;
+}
+.border(@direction, @type) when (@direction=bottom) {
+  border-bottom: @baseBorderWidth @type @baseBorderColor;
+}
+.border {
+  .border(border, solid);
+  &-top {
+    .border(top, solid);
+  }
+  &-left {
+    .border(left, solid);
+  }
+  &-right {
+    .border(right, solid);
+  }
+  &-bottom {
+    .border(bottom, solid);
+  }
+}
+//虚线边框
+.dashed {
+  .border(border, dashed);
+  &-top {
+    .border(top, dashed);
+  }
+  &-left {
+    .border(left, dashed);
+  }
+  &-right {
+    .border(right, dashed);
+  }
+  &-bottom {
+    .border(bottom, dashed);
+  }
+}
+//圆点边框
+.dotted {
+  .border(border, dotted);
+  &-top {
+    .border(top, dotted);
+  }
+  &-left {
+    .border(left, dotted);
+  }
+  &-right {
+    .border(right, dotted);
+  }
+  &-bottom {
+    .border(bottom, dotted);
+  }
+}
