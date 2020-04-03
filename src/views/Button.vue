@@ -11,14 +11,46 @@
             v-model="isRadius"
           />圆角</label
         >
+        <label for="noDisabled"
+          ><input
+            type="radio"
+            name="disabled"
+            id="noDisabled"
+            value=""
+            v-model="isDisabled"
+          />不禁用</label
+        >
+        <label for="cssDisabled"
+          ><input
+            type="radio"
+            name="disabled"
+            id="cssDisabled"
+            value="0"
+            v-model="isDisabled"
+          />属性禁用</label
+        >
+        <label for="attrDisabled"
+          ><input
+            type="radio"
+            name="disabled"
+            id="attrDisabled"
+            value="1"
+            v-model="isDisabled"
+          />样式禁用</label
+        >
       </h1>
       <div class="margin-top-sm">
         <a
           v-for="(item, index) in theColors"
           :key="index"
           href="javascript:;"
+          :disabled="isDisabled === '0'"
           class="btn"
-          :class="[`bg-${item.name}`, { radius: isRadius }]"
+          :class="[
+            `bg-${item.name}`,
+            { radius: isRadius },
+            { disabled: isDisabled === '1' }
+          ]"
           >{{ `${item.title}按钮` }}</a
         >
       </div>
@@ -27,11 +59,13 @@
           v-for="(item, index) in theSizes"
           :key="index"
           href="javascript:;"
+          :disabled="isDisabled === '0'"
           class="btn"
           :class="[
             item.name ? `btn-${item.name}` : '',
             `bg-${theColors[index].name}`,
-            { radius: isRadius }
+            { radius: isRadius },
+            { disabled: isDisabled === '1' }
           ]"
           >{{ `${item.title}按钮` }}
         </a>
@@ -41,8 +75,13 @@
           v-for="(item, index) in theColors"
           :key="index"
           href="javascript:;"
+          :disabled="isDisabled === '0'"
           class="btn btn-block margin-top"
-          :class="[`bg-${item.name}`, { radius: isRadius }]"
+          :class="[
+            `bg-${item.name}`,
+            { radius: isRadius },
+            { disabled: isDisabled === '1' }
+          ]"
           >块状按钮</a
         >
       </div>
@@ -51,8 +90,13 @@
           v-for="(item, index) in theColors"
           :key="index"
           href="javascript:;"
+          :disabled="isDisabled === '0'"
           class="btn"
-          :class="[`line-${item.name}`, { radius: isRadius }]"
+          :class="[
+            `line-${item.name}`,
+            { radius: isRadius },
+            { disabled: isDisabled === '1' }
+          ]"
           >线框按钮</a
         >
       </div>
@@ -61,11 +105,13 @@
           v-for="(item, index) in theSizes"
           :key="index"
           href="javascript:;"
+          :disabled="isDisabled === '0'"
           class="btn"
           :class="[
             item.name ? `btn-${item.name}` : '',
             `line-${theColors[index].name}`,
-            { radius: isRadius }
+            { radius: isRadius },
+            { disabled: isDisabled === '1' }
           ]"
           >{{ `${item.title}按钮` }}
         </a>
@@ -75,8 +121,13 @@
           v-for="(item, index) in theColors"
           :key="index"
           href="javascript:;"
+          :disabled="isDisabled === '0'"
           class="btn btn-block margin-top"
-          :class="[`line-${item.name}`, { radius: isRadius }]"
+          :class="[
+            `line-${item.name}`,
+            { radius: isRadius },
+            { disabled: isDisabled === '1' }
+          ]"
           >块状按钮</a
         >
       </div>
@@ -94,7 +145,8 @@
 export default {
   data() {
     return {
-      isRadius: false
+      isRadius: false,
+      isDisabled: ""
     };
   },
   computed: {

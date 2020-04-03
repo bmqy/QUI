@@ -2,7 +2,7 @@
   <div class="container-full">
     <div class="container w1200">
       <h1>文本演示</h1>
-      <div class="margin-top">
+      <div class="margin-top" ref="demoText">
         <p
           v-for="(item, index) in theColors"
           :key="index"
@@ -38,7 +38,7 @@
           :class="`bg-${item.name}`"
         >
           {{
-            `我是一段单行文本超出隐藏的文字我是一段单行文本超出隐藏的文字我是一段单行文本超出隐藏的文字`
+            "我是一段单行文本超出隐藏的文字我是一段单行文本超出隐藏的文字我是一段单行文本超出隐藏的文字"
           }}
         </p>
       </div>
@@ -49,7 +49,9 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      demoText: ""
+    };
   },
   computed: {
     theColors: function() {

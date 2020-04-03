@@ -2,7 +2,7 @@
 /*
  * @Author: bmqy
  * @Date: 2015-11-30 00:00:00
- * @LastEditTime: 2020-04-02 15:31:31
+ * @LastEditTime: 2020-04-03 18:09:35
  * @Description: PC端css模板：button组件
  */
 
@@ -21,6 +21,51 @@
   .border-box;
   &:hover {
     text-decoration: none;
+  }
+  /* 禁用 */
+  &[disabled][class~="bg-white"],
+  &[disabled][class~="bg-gray"],
+  &[disabled][class~="bg-black"],
+  &[disabled][class~="bg-red"],
+  &[disabled][class~="bg-blue"],
+  &[disabled][class~="bg-orange"],
+  &[disabled][class*="bg-"],
+  &[class~="disabled"][class~="bg-white"],
+  &[class~="disabled"][class~="bg-gray"],
+  &[class~="disabled"][class~="bg-black"],
+  &[class~="disabled"][class~="bg-red"],
+  &[class~="disabled"][class~="bg-blue"],
+  &[class~="disabled"][class~="bg-orange"],
+  &[class~="disabled"][class*="bg-"]{
+    background-color: #f0f0f0 !important;
+    color: @gray !important;
+    cursor: not-allowed !important;
+    &:hover{
+      background-color: #f0f0f0 !important;
+      color: @gray !important;      
+    }
+  }
+  &[disabled][class~="line-white"],
+  &[disabled][class~="line-gray"],
+  &[disabled][class~="line-black"],
+  &[disabled][class~="line-red"],
+  &[disabled][class~="line-blue"],
+  &[disabled][class~="line-orange"],
+  &[disabled][class*="line-"],
+  &[class~="disabled"][class~="line-white"],
+  &[class~="disabled"][class~="line-gray"],
+  &[class~="disabled"][class~="line-black"],
+  &[class~="disabled"][class~="line-red"],
+  &[class~="disabled"][class~="line-blue"],
+  &[class~="disabled"][class~="line-orange"],
+  &[class~="disabled"][class*="line-"]{
+    border-color: #f0f0f0 !important;
+    color: @gray !important;
+    cursor: not-allowed !important;
+    &:hover{
+      border-color: #f0f0f0 !important;
+      color: @gray !important;      
+    }
   }
   /* 尺寸 */
   &-sm {
@@ -51,7 +96,7 @@
     color: @gray;
     &:hover {
       background-color: lighten(@white, 10%);
-    }
+    }    
   }
   &.bg-gray {
     background-color: #f0f0f0;
@@ -99,16 +144,6 @@
         border-color: lighten(@white, 10%);
         color: lighten(@gray, 10%);
       }
-      &.btn-sm {
-        line-height: 22px;
-      }
-      &.btn-lg {
-        line-height: 38px;
-      }
-      &.btn-block {
-        font-size: 16px;
-        line-height: 40px;
-      }
     }
     &-gray {
       .border;
@@ -118,16 +153,6 @@
       &:hover {
         border-color: lighten(#f0f0f0, 1%);
         color: lighten(@gray, 10%);
-      }
-      &.btn-sm {
-        line-height: 22px;
-      }
-      &.btn-lg {
-        line-height: 38px;
-      }
-      &.btn-block {
-        font-size: 16px;
-        line-height: 40px;
       }
     }
     &-black {
@@ -139,16 +164,6 @@
         border-color: lighten(@black, 10%);
         color: lighten(@black, 10%);
       }
-      &.btn-sm {
-        line-height: 22px;
-      }
-      &.btn-lg {
-        line-height: 38px;
-      }
-      &.btn-block {
-        font-size: 16px;
-        line-height: 40px;
-      }
     }
     &-red {
       .border;
@@ -158,16 +173,6 @@
       &:hover {
         border-color: lighten(@red, 10%);
         color: lighten(@red, 10%);
-      }
-      &.btn-sm {
-        line-height: 22px;
-      }
-      &.btn-lg {
-        line-height: 38px;
-      }
-      &.btn-block {
-        font-size: 16px;
-        line-height: 40px;
       }
 		}
     &-blue {
@@ -179,16 +184,6 @@
         border-color: lighten(@blue, 10%);
         color: lighten(@blue, 10%);
       }
-      &.btn-sm {
-        line-height: 22px;
-      }
-      &.btn-lg {
-        line-height: 38px;
-      }
-      &.btn-block {
-        font-size: 16px;
-        line-height: 40px;
-      }
     }
     &-orange {
       .border;
@@ -199,16 +194,24 @@
         border-color: lighten(@orange, 10%);
         color: lighten(@orange, 10%);
       }
-      &.btn-sm {
-        line-height: 22px;
-      }
-      &.btn-lg {
-        line-height: 38px;
-      }
-      &.btn-block {
-        font-size: 16px;
-        line-height: 40px;
-      }
+    }
+  }  
+  &[class~="line-white"],
+  &[class~="line-gray"],
+  &[class~="line-black"],
+  &[class~="line-red"],
+  &[class~="line-blue"],
+  &[class~="line-orange"],
+  &[class*="line-"]{    
+    &.btn-sm {
+      line-height: 22px;
+    }
+    &.btn-lg {
+      line-height: 38px;
+    }
+    &.btn-block {
+      font-size: 16px;
+      line-height: 40px;
     }
   }
 }
