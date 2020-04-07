@@ -2,7 +2,7 @@
   <div class="container-full">
     <div class="container w1200">
       <h1>文本演示</h1>
-      <div class="margin-top" ref="demoText">
+      <div class="margin-top">
         <p
           v-for="(item, index) in theColors"
           :key="index"
@@ -42,6 +42,15 @@
           }}
         </p>
       </div>
+      <div class="margin-top">
+        <p
+          v-for="(item, index) in capital"
+          :key="index"
+          :class="`text-${item.name}`"
+        >
+          {{ `${item.title}: Where there is love, there are always wishes.` }}
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -50,7 +59,20 @@
 export default {
   data() {
     return {
-      demoText: ""
+      capital: [
+        {
+          title: "全大写",
+          name: "ABC"
+        },
+        {
+          title: "全小写",
+          name: "abc"
+        },
+        {
+          title: "首字母大写",
+          name: "Abc"
+        }
+      ]
     };
   },
   computed: {
