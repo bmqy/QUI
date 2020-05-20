@@ -11,6 +11,14 @@
             v-model="isRadius"
           />圆角</label
         >
+        <label for="round"
+          ><input
+            type="checkbox"
+            name="round"
+            id="round"
+            v-model="isRound"
+          />圆弧</label
+        >
         <label for="noDisabled"
           ><input
             type="radio"
@@ -49,6 +57,7 @@
           :class="[
             `bg-${item.name}`,
             { radius: isRadius },
+            { round: isRound },
             { disabled: isDisabled === '1' }
           ]"
           >{{ `${item.title}按钮` }}</a
@@ -65,6 +74,7 @@
             item.name ? `btn-${item.name}` : '',
             `bg-${theColors[index].name}`,
             { radius: isRadius },
+            { round: isRound },
             { disabled: isDisabled === '1' }
           ]"
           >{{ `${item.title}按钮` }}
@@ -80,6 +90,7 @@
           :class="[
             `bg-${item.name}`,
             { radius: isRadius },
+            { round: isRound },
             { disabled: isDisabled === '1' }
           ]"
           >块状按钮</a
@@ -95,6 +106,7 @@
           :class="[
             `line-${item.name}`,
             { radius: isRadius },
+            { round: isRound },
             { disabled: isDisabled === '1' }
           ]"
           >线框按钮</a
@@ -111,6 +123,7 @@
             item.name ? `btn-${item.name}` : '',
             `line-${theColors[index].name}`,
             { radius: isRadius },
+            { round: isRound },
             { disabled: isDisabled === '1' }
           ]"
           >{{ `${item.title}按钮` }}
@@ -126,6 +139,7 @@
           :class="[
             `line-${item.name}`,
             { radius: isRadius },
+            { round: isRound },
             { disabled: isDisabled === '1' }
           ]"
           >块状按钮</a
@@ -146,6 +160,7 @@ export default {
   data() {
     return {
       isRadius: false,
+      isRound: false,
       isDisabled: ""
     };
   },
