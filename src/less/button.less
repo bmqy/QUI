@@ -2,7 +2,7 @@
 /*
  * @Author: bmqy
  * @Date: 2015-11-30 00:00:00
- * @LastEditTime: 2020-05-20 09:46:10
+ * @LastEditTime: 2020-05-20 13:58:11
  * @Description: PC端css模板：button组件
  */
 
@@ -72,19 +72,28 @@
     padding: 0 10px;
     height: 24px;
     line-height: 24px;
-    font-size: 12px;
+    font-size: 12px;    
+    &.radius {
+      border-radius: 3px;
+    }
   }
   &-lg {
     padding: 0 20px;
     height: 40px;
     line-height: 40px;
     font-size: 16px;
+    &.radius {
+      border-radius: 8px;
+    }
   }
   &-xl {
     padding: 0 50px;
     height: 50px;
     line-height: 50px;
     font-size: 16px;
+    &.radius {
+      border-radius: 10px;
+    }
   }
   /* 块状 */
   &-block {
@@ -93,7 +102,7 @@
     font-size: 16px;
     line-height: 40px;
     &.radius {
-      border-radius: 10px;
+      border-radius: 100px;
     }
   }
   /* 按钮背景 */
@@ -210,7 +219,7 @@
   &[class~="line-orange"],
   &[class*="line-"]{    
     &.btn-sm {
-      line-height: 22px;
+      line-height: 22px; 
     }
     &.btn-lg {
       line-height: 38px;
