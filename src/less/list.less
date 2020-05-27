@@ -1,0 +1,40 @@
+// out: false
+
+/*
+ * @Author: bmqy
+ * @Date: 2015-11-30 00:00:00
+ * @LastEditTime: 2020-05-25 16:15:11
+ * @Description: PC端css模板：table表格
+ */
+
+/* table */
+.list {
+  line-height: 30px;
+  >li{    
+    position: relative;
+  }
+  &[class~=list-style-disc],
+  &[class~=list-style-circle],
+  &[class~=list-style-square]{
+    >li{
+      padding-left: 15px;
+      &::before{
+        margin-top: -15px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+      }
+    }
+  }
+  &-style{
+    &-disc > li::before{
+      content: '•';
+    }
+    &-circle > li::before{
+      content: '◦';
+    }
+    &-square > li::before{
+      content: '▪';      
+    }
+  }
+}

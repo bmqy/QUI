@@ -3,7 +3,7 @@
 /*
  * @Author: bmqy
  * @Date: 2015-11-30 00:00:00
- * @LastEditTime: 2020-05-19 17:23:57
+ * @LastEditTime: 2020-05-22 17:53:36
  * @Description: PC端css模板
  */
 
@@ -15,6 +15,9 @@
 @import url(./button.less);
 @import url(./image.less);
 @import url(./form.less);
+@import url(./list.less);
+@import url(./grid.less);
+@import url(./nav.less);
 @import url(./article.less);
 
 /* 通用样式 */
@@ -34,6 +37,9 @@ dd,
 p {
   margin: 0;
   padding: 0;
+}
+*{
+  box-sizing: border-box;
 }
 p {
   margin-bottom: 1em;
@@ -109,6 +115,7 @@ button {
 /* 链接 */
 a {
   text-decoration: none;
+  color: inherit;
   &:hover {
     text-decoration: underline;
   }

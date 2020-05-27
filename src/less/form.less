@@ -3,85 +3,129 @@
 /*
  * @Author: bmqy
  * @Date: 2015-11-30 00:00:00
- * @LastEditTime: 2020-05-06 15:19:14
+ * @LastEditTime: 2020-05-27 17:49:12
  * @Description: PC端css模板：表单
  */
 
 /* 表单 */
-input[type="text"],
-input[type="password"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="email"],
-input[type="file"],
-input[type="date"],
-input[type="time"],
-select,
-textarea {
-  .border;
-  box-sizing: border-box;
-  padding: 5px;
-  outline: none;
-}
-input[type="text"],
-input[type="password"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="email"],
-input[type="file"],
-input[type="date"],
-input[type="time"],
-textarea {
-  &:focus {
-    border-color: lighten(@baseBorderColor, 2%);
-  }
-}
-input[type="text"],
-input[type="password"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="email"],
-input[type="file"],
-input[type="date"],
-input[type="time"],
-select {
-  height: 30px;
-}
-input[type="checkbox"],
-input[type="radio"] {
-  display: inline-block;
-  .border;
-  vertical-align: middle;
-  margin-top: -3px;
-}
-textarea {
-  resize: none;
-}
-.input-row {
+.form-group {
   margin-bottom: 15px;
+  .clearfix;
+      
+  input[type="text"],
+  input[type="password"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="file"],
+  input[type="date"],
+  input[type="time"],
+  select,
+  textarea {
+    .border;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    outline: none;
+  }
+  >input[type="text"],
+  >input[type="password"],
+  >input[type="number"],
+  >input[type="search"],
+  >input[type="tel"],
+  >input[type="email"],
+  >input[type="file"],
+  >input[type="date"],
+  >input[type="time"],
+  >select,
+  >textarea {
+    width: 80%;
+    padding: 6px 10px;
+    font-size: 14px;
+    float: left;
+    &:focus {
+      border-color: lighten(@baseBorderColor, 2%);
+    }
+  }
+  >input[type="text"],
+  >input[type="password"],
+  >input[type="number"],
+  >input[type="search"],
+  >input[type="tel"],
+  >input[type="email"],
+  >input[type="file"],
+  >input[type="date"],
+  >input[type="time"],
+  >select {
+    height: 34px;
+  }
+  input[type="checkbox"],
+  input[type="radio"] {
+    display: inline-block;
+    .border;
+    vertical-align: middle;
+    margin-top: -3px;
+  }
+  >textarea {
+    resize: none;
+  }
   select,
   input[type="checkbox"],
   input[type="radio"] {
     width: auto;
     display: inline-block;
   }
-}
-.label {
-  min-width: 80px;
-  margin-right: 5px;
-  display: inline-block;
-  text-align: right;
-  color: #666;
-  vertical-align: top;
-  .must {
-    margin-right: 2px;
-    font-size: inherit;
-    color: red;
-    vertical-align: top;
-    display: inline-block;
+  >label {
+    width: 20%;
+    min-width: 1px;
+    padding: 7px 15px;
+    display: block;
+    font-size: 14px;
+    text-align: right;
+    float: left;
+  }
+  &-lg{    
+    >input[type="text"],
+    >input[type="password"],
+    >input[type="number"],
+    >input[type="search"],
+    >input[type="tel"],
+    >input[type="email"],
+    >input[type="file"],
+    >input[type="date"],
+    >input[type="time"],
+    >select {
+      height: 46px;
+      padding: 10px 15px;
+      font-size: 16px;
+    }    
+    >label {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      font-size: 16px;
+    }
+  }
+  &-sm{    
+    >input[type="text"],
+    >input[type="password"],
+    >input[type="number"],
+    >input[type="search"],
+    >input[type="tel"],
+    >input[type="email"],
+    >input[type="file"],
+    >input[type="date"],
+    >input[type="time"],
+    >select {
+      height: 30px;
+      padding: 5px 10px;
+      font-size: 12px;
+    }  
+    >label {
+      padding-top: 6px;
+      padding-bottom: 6px;
+      font-size: 12px;
+      line-height: 1.5;
+    }
   }
 }
 .input-tips {

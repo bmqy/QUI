@@ -1,11 +1,15 @@
 <template>
   <div id="app">
-    <div class="container-full">
+    <div class="container-full bg-red">
       <div class="container w1200">
-        <div id="nav">
-          <router-link to="/">首页</router-link> |
-          <router-link to="/text">文本</router-link> |
+        <div id="nav" class="nav">
+          <router-link to="/">首页</router-link>
+          <router-link to="/text">文本</router-link>
           <router-link to="/button">按钮</router-link>
+          <router-link to="/list">列表</router-link>
+          <router-link to="/grid">宫格</router-link>
+          <router-link to="/form">表单</router-link>
+          <router-link to="/docs">文档</router-link>
         </div>
       </div>
     </div>

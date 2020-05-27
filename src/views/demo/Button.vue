@@ -184,6 +184,20 @@ export default {
       });
       return arr;
     }
+  },
+  watch: {
+    isRadius(val, oldVal) {
+      console.log(oldVal);
+      if (this.isRound) {
+        this.isRound = !val;
+      }
+    },
+    isRound(val, oldVal) {
+      console.log(oldVal);
+      if (this.isRadius) {
+        this.isRadius = !val;
+      }
+    }
   }
 };
 </script>
