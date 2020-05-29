@@ -3,13 +3,14 @@
 /*
  * @Author: bmqy
  * @Date: 2015-11-30 00:00:00
- * @LastEditTime: 2020-05-27 17:49:12
+ * @LastEditTime: 2020-05-29 17:00:16
  * @Description: PC端css模板：表单
  */
 
 /* 表单 */
 .form-group {
   margin-bottom: 15px;
+  position: relative;
   .clearfix;
       
   input[type="text"],
@@ -39,7 +40,7 @@
   >input[type="time"],
   >select,
   >textarea {
-    width: 80%;
+    width: 60%;
     padding: 6px 10px;
     font-size: 14px;
     float: left;
@@ -66,23 +67,42 @@
     vertical-align: middle;
     margin-top: -3px;
   }
+  select{
+    width: 20%;
+    min-width: 60px;    
+    & + .input-tips{
+      width: auto;
+    }
+  }
   >textarea {
     resize: none;
   }
-  select,
   input[type="checkbox"],
   input[type="radio"] {
     width: auto;
-    display: inline-block;
   }
   >label {
     width: 20%;
-    min-width: 1px;
     padding: 7px 15px;
     display: block;
     font-size: 14px;
-    text-align: right;
     float: left;
+    &:first-child{      
+      min-width: 75px;
+      max-width: 240px;
+      text-align: right;
+    }
+    & + label{      
+      padding-left: 0;
+    }
+    &.checkbox-inline,
+    &.radio-inline{
+      width: auto;
+    }
+    & + .input-tips{
+      width: auto;
+      padding-left: 0;
+    }
   }
   &-lg{    
     >input[type="text"],
@@ -98,8 +118,13 @@
       height: 46px;
       padding: 10px 15px;
       font-size: 16px;
-    }    
-    >label {
+    }      
+    input[type="checkbox"],
+    input[type="radio"] {
+      height: 46px;
+    }
+    >label,
+    >.input-tips {
       padding-top: 12px;
       padding-bottom: 12px;
       font-size: 16px;
@@ -120,7 +145,8 @@
       padding: 5px 10px;
       font-size: 12px;
     }  
-    >label {
+    >label,
+    >.input-tips {
       padding-top: 6px;
       padding-bottom: 6px;
       font-size: 12px;
@@ -129,7 +155,13 @@
   }
 }
 .input-tips {
-  margin-left: 20px;
+  width: 20%;
+  padding: 7px 15px;
   display: inline-block;
-  vertical-align: top;
+  &.block{
+    width: 80% !important;
+    padding-left: 20% !important;
+    padding-right: 0;
+    display: inline-block;
+  }
 }

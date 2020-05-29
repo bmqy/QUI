@@ -2,7 +2,7 @@
 /*
  * @Author: bmqy
  * @Date: 2015-11-30 00:00:00
- * @LastEditTime: 2020-04-02 09:42:23
+ * @LastEditTime: 2020-05-29 14:44:55
  * @Description: PC端css模板：边框
  */
 
@@ -18,34 +18,34 @@
 .no-border {
   border: none !important;
 }
-.border(@direction, @type) when (@direction=border) {
-  border: @baseBorderWidth @type @baseBorderColor;
+.border(border, @type: solid, @color: @baseBorderColor) {
+  border: @baseBorderWidth @type @color;
 }
-.border(@direction, @type) when (@direction=top) {
-  border-top: @baseBorderWidth @type @baseBorderColor;
+.border(top, @type: solid, @color: @baseBorderColor) {
+  border-top: @baseBorderWidth @type @color;
 }
-.border(@direction, @type) when (@direction=left) {
-  border-left: @baseBorderWidth @type @baseBorderColor;
+.border(left, @type: solid, @color: @baseBorderColor) {
+  border-left: @baseBorderWidth @type @color;
 }
-.border(@direction, @type) when (@direction=right) {
-  border-right: @baseBorderWidth @type @baseBorderColor;
+.border(right, @type: solid, @color: @baseBorderColor) {
+  border-right: @baseBorderWidth @type @color;
 }
-.border(@direction, @type) when (@direction=bottom) {
-  border-bottom: @baseBorderWidth @type @baseBorderColor;
+.border(bottom, @type: solid, @color: @baseBorderColor) {
+  border-bottom: @baseBorderWidth @type @color;
 }
 .border {
-  .border(border, solid);
+  .border(border);
   &-top {
-    .border(top, solid);
+    .border(top);
   }
   &-left {
-    .border(left, solid);
+    .border(left);
   }
   &-right {
-    .border(right, solid);
+    .border(right);
   }
   &-bottom {
-    .border(bottom, solid);
+    .border(bottom);
   }
 }
 //虚线边框
