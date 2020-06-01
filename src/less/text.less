@@ -3,7 +3,7 @@
 /*
  * @Author: bmqy
  * @Date: 2015-11-30 00:00:00
- * @LastEditTime: 2020-05-19 17:26:50
+ * @LastEditTime: 2020-06-01 09:47:00
  * @Description: PC端css模板：文本
  */
 
@@ -49,11 +49,6 @@ h3 {
   &-justify {
     text-align: justify;
   }
-  &-ellipsis {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
   /* 文字颜色 */
   &-white {
     color: @white;
@@ -82,7 +77,13 @@ h3 {
   &-Abc{
     text-transform: capitalize;
   }
-} 
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
 /* 背景色 */
 .bg {

@@ -42,6 +42,12 @@ const routes = [
     name: "表格",
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/demo/Form.vue")
+  },
+  {
+    path: "/panel",
+    name: "面板",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/demo/Panel.vue")
   }
 ];
 

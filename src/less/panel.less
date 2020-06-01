@@ -3,13 +3,44 @@
 /*
  * @Author: bmqy
  * @Date: 2015-11-30 00:00:00
- * @LastEditTime: 2020-05-29 16:49:13
+ * @LastEditTime: 2020-06-01 10:09:34
  * @Description: PC端css模板：panel组件
  */
 
 /* panel */
 .panel {
   &-head{
-
+    height: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 45px;
+    font-size: 16px;
+    position: relative;
+    .border(bottom, solid, @baseBorderColor);
+    .title{
+      float: left;
+    }
+    .more{
+      .more;
+      float: right;
+      font-size: 12px;
+    }    
+    &[class~="bg-white"],
+    &[class~="bg-gray"],
+    &[class~="bg-black"],
+    &[class~="bg-red"],
+    &[class~="bg-blue"],
+    &[class~="bg-orange"],
+    &[class*="bg-"]{
+      .more{
+        color: inherit;
+      }    
+    }
+  }
+  &-body{
+    padding: 15px;
+  }
+  &-foot{
+    padding: 0 15px 15px;
   }
 }
