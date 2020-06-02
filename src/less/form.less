@@ -3,7 +3,7 @@
 /*
  * @Author: bmqy
  * @Date: 2015-11-30 00:00:00
- * @LastEditTime: 2020-05-29 17:29:55
+ * @LastEditTime: 2020-06-02 17:16:10
  * @Description: PC端css模板：表单
  */
 
@@ -67,11 +67,16 @@
     vertical-align: middle;
     margin-top: -3px;
   }
-  select{
+  select,
+  input.verifycode{
     width: 20%;
     min-width: 60px;    
     & + .input-tips{
       width: auto;
+    }
+    & + .btn{
+      margin-left: 15px;
+      margin-right: 0;
     }
   }
   >textarea {
@@ -114,7 +119,8 @@
     >input[type="file"],
     >input[type="date"],
     >input[type="time"],
-    >select {
+    >select,
+    input.verifycode{
       height: 46px;
       padding: 10px 15px;
       font-size: 16px;
@@ -136,7 +142,8 @@
     >input[type="file"],
     >input[type="date"],
     >input[type="time"],
-    >select {
+    >select,
+    input.verifycode{
       height: 30px;
       padding: 5px 10px;
       font-size: 12px;

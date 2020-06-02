@@ -42,7 +42,7 @@
         </div>
         <div class="form-group">
           <label for="favorite">爱好</label>
-          <label class="radio-inline"
+          <label class="checkbox-inline"
             ><input type="checkbox" name="favorite" id="favorite" /> 体育</label
           >
           <label class="checkbox-inline"
@@ -58,6 +58,16 @@
           <span class="input-tips text-gray"
             >一段辅助说明一段辅助说明一段辅助说明</span
           >
+        </div>
+        <div class="form-group">
+          <label for="verifycode">验证码</label>
+          <input
+            type="text"
+            class="verifycode"
+            name="verifycode"
+            id="verifycode"
+          />
+          <button class="btn bg-red">获取验证码</button>
         </div>
         <div class="form-group">
           <label></label>
