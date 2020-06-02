@@ -3,12 +3,13 @@
 /*
  * @Author: bmqy
  * @Date: 2015-11-30 00:00:00
- * @LastEditTime: 2020-06-01 09:45:32
- * @Description: PC端css模板：table表格
+ * @LastEditTime: 2020-06-02 11:16:31
+ * @Description: PC端css模板：list表格
  */
 
-/* table */
+/* list */
 .list {
+  /* 单行文本列表 */
   line-height: 30px;
   >li{    
     position: relative;
@@ -41,5 +42,70 @@
     &-square > li::before{
       content: '▪';      
     }
+  }
+
+  /* 图文列表 */
+  &-thumbnail{
+    /* 上图下文 */
+    &-center{
+    }
+    /* 左图右文 */
+    &-left{
+      .list-thumbnail-item{
+        .clearfix;
+        .thumbnail{
+          margin-right: 15px;     
+          float: left;
+        }
+        .content{
+          float: left;        
+        }
+      }
+    }
+    &-left,
+    &-center{
+      .content{
+        position: relative;
+        .top,
+        .left,
+        .right,
+        .bottom{
+          position: absolute;
+        }
+        .top{
+          top: 0;
+        }
+        .left{
+          left: 0;
+        }
+        .right{
+          right: 0;
+        }
+        .bottom{
+          bottom: 0;
+        }
+      }    
+      .title{
+        font-size: 16px;
+      }
+      .desc{
+        color: @gray;
+      }
+    }
+  }
+}
+
+/* 缩略图盒子 */
+.thumbnail{      
+  overflow: hidden;
+  background-color: #e0e0e0;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  line-height: 0;
+  img{
+      max-width: 100%;
+      max-height: 100%;
   }
 }
