@@ -107,7 +107,7 @@
         </div>
       </div>
 
-      <div class="grid">
+      <div class="grid grid-gap">
         <div class="grid-item">
           <ul class="list-thumbnail-center">
             <li class="list-thumbnail-item">
@@ -119,6 +119,22 @@
                 <div class="desc">
                   这是一段简短的摘要内容,到此结束。这是一段简短的摘要内容,到此结束
                 </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="grid-item">
+          <ul class="list-thumbnail-left">
+            <li class="list-thumbnail-item">
+              <a href="#" class="thumbnail">
+                <img src="http://iph.href.lu/600x400?text=缩略图" alt="" />
+              </a>
+              <div class="content">
+                <a href="#" class="title">这个是标题</a>
+                <div class="desc">
+                  这是一段简短的摘要内容,到此结束
+                </div>
+                <div class="meta text-gray text-sm bottom">2020-05-26</div>
               </div>
             </li>
           </ul>
@@ -135,13 +151,14 @@
     height: 120px;
   }
   .content {
-    width: 205px;
+    width: 180px;
+    height: 120px;
   }
 }
 .list-thumbnail-center {
   .thumbnail {
     width: 400px;
-    height: 266px;
+    height: 260px;
   }
   .content {
     width: 400px;
