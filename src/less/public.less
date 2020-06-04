@@ -3,7 +3,7 @@
 /*
  * @Author: bmqy
  * @Date: 2015-11-30 00:00:00
- * @LastEditTime: 2020-06-01 09:50:56
+ * @LastEditTime: 2020-06-04 10:12:33
  * @Description: PC端css模板
  */
 
@@ -19,6 +19,7 @@
 @import url(./grid.less);
 @import url(./nav.less);
 @import url(./panel.less);
+@import url(./tab.less);
 @import url(./article.less);
 
 /* 通用样式 */
@@ -296,6 +297,15 @@ a {
 }
 .radius {
   border-radius: 5px;
+  &-sm{    
+    border-radius: 3px;
+  }
+  &-lg{    
+    border-radius: 8px;
+  }
+  &-xl{    
+    border-radius: 10px;
+  }
   &-top {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;

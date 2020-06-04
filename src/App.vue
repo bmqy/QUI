@@ -10,6 +10,7 @@
           <router-link to="/grid">宫格</router-link>
           <router-link to="/form">表单</router-link>
           <router-link to="/panel">面板</router-link>
+          <router-link to="/tab">tab</router-link>
           <router-link to="/docs">文档</router-link>
         </div>
       </div>

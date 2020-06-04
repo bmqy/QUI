@@ -1,0 +1,116 @@
+// out: false
+/*
+ * @Author: bmqy
+ * @Date: 2015-11-30 00:00:00
+ * @LastEditTime: 2020-06-04 15:51:20
+ * @Description: PC端css模板：tab组件
+ */
+
+.tab{
+  &-bar{
+    &-item{
+      padding: 0 20px;
+      text-align: center;
+      line-height: 45px;
+      display: inline-block;
+      position: relative;
+      &.active:after,
+      &:hover:after{
+        content: '';
+        width: 100%;
+        height: 3px;
+        background-color: @red;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+      >a{
+        display: block;
+        text-decoration: none;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+    &.round{
+      display: inline-block;
+      border-radius: 1000px;
+      .tab-bar-item{
+        display: inline-block;
+        border-radius: 1000px;
+        &.active:after,
+        &:hover:after{
+          display: none;
+        }
+      }
+      &.bg-white,
+      &.bg-black,
+      &.bg-gray,
+      &.bg-red,
+      &.bg-blue,
+      &.bg-orange{
+        background-color: transparent;
+        .tab-bar-item{
+          color: #333;
+          &.active,
+          &:hover{
+            color: #fff;
+          }
+        }
+      }
+      &.bg-white{
+        .tab-bar-item.active,
+        .tab-bar-item:hover{
+          background-color: @white;
+          color: #333;
+        }
+      }
+      &.bg-black{
+        .tab-bar-item.active,
+        .tab-bar-item:hover{
+          background-color: @black;
+        }
+      }
+      &.bg-gray{
+        .tab-bar-item.active,
+        .tab-bar-item:hover{
+          background-color: @gray;
+        }
+      }
+      &.bg-red{
+        .tab-bar-item.active,
+        .tab-bar-item:hover{
+          background-color: @red;
+        }
+      }
+      &.bg-blue{
+        .tab-bar-item.active,
+        .tab-bar-item:hover{
+          background-color: @blue;
+        }
+      }
+      &.bg-orange{
+        .tab-bar-item.active,
+        .tab-bar-item:hover{
+          background-color: @orange;
+        }
+      }
+    }
+    &.radius{
+      .tab-bar-item{
+        &:first-child{
+          border-radius: 5px 0 0 5px;
+        }
+        &:last-child{
+          border-radius: 0 5px 5px 0;
+        }
+      }
+    }
+    &.nav-justify{
+      .tab-bar-item{
+        width: 1%;
+        display: table-cell;
+      }
+    }
+  }
+}

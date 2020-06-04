@@ -48,6 +48,12 @@ const routes = [
     name: "面板",
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/demo/Panel.vue")
+  },
+  {
+    path: "/tab",
+    name: "tab",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/demo/Tab.vue")
   }
 ];
 
