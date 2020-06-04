@@ -67,7 +67,7 @@
             name="verifycode"
             id="verifycode"
           />
-          <button class="btn bg-red">获取验证码</button>
+          <button type="button" class="btn bg-red">获取验证码</button>
         </div>
         <div class="form-group">
           <label></label>
