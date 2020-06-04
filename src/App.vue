@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="container-full bg-red">
-      <div class="container w1200 bg-re">
+      <div class="container w1200 bg-red">
         <div id="nav" class="nav">
           <router-link to="/">首页</router-link>
           <router-link to="/text">文本</router-link>
