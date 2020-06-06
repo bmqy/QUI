@@ -3,7 +3,7 @@
 /*
  * @Author: bmqy
  * @Date: 2015-11-30 00:00:00
- * @LastEditTime: 2020-04-02 10:28:44
+ * @LastEditTime: 2020-06-06 15:55:53
  * @Description: PC端css模板：table表格
  */
 
@@ -40,6 +40,12 @@ table {
     box-sizing: border-box;
     vertical-align: middle;
     .border;
+  }
+  
+  &.striped{
+    > tbody > tr:nth-of-type(odd) {
+        background-color: #f8f8f8;
+    }
   }
 
   &.no-border {
