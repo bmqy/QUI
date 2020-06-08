@@ -39,9 +39,15 @@ const routes = [
   },
   {
     path: "/form",
-    name: "表格",
+    name: "表单",
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/demo/Form.vue")
+  },
+  {
+    path: "/table",
+    name: "表格",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/demo/Table.vue")
   },
   {
     path: "/panel",

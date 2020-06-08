@@ -9,6 +9,7 @@
           <router-link to="/list">列表</router-link>
           <router-link to="/grid">宫格</router-link>
           <router-link to="/form">表单</router-link>
+          <router-link to="/table">表格</router-link>
           <router-link to="/panel">面板</router-link>
           <router-link to="/tab">tab</router-link>
           <router-link to="/docs">文档</router-link>
