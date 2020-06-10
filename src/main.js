@@ -35,23 +35,23 @@ Vue.prototype.colors = [
 Vue.prototype.sizes = [
   {
     title: "超小",
-    name: "xs"
+    name: "mini"
   },
   {
     title: "小",
-    name: "sm"
+    name: "small"
   },
   {
     title: "普通",
-    name: ""
+    name: "normal"
   },
   {
     title: "大",
-    name: "lg"
+    name: "large"
   },
   {
     title: "超大",
-    name: "xl"
+    name: "bigger"
   }
 ];
 

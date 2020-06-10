@@ -71,7 +71,7 @@
           :disabled="isDisabled === '0'"
           class="btn"
           :class="[
-            item.name ? `btn-${item.name}` : '',
+            item.name ? `${item.name}` : '',
             `bg-${theColors[index].name}`,
             { radius: isRadius },
             { round: isRound },
@@ -120,7 +120,7 @@
           :disabled="isDisabled === '0'"
           class="btn"
           :class="[
-            item.name ? `btn-${item.name}` : '',
+            item.name ? `${item.name}` : '',
             `line-${theColors[index].name}`,
             { radius: isRadius },
             { round: isRound },
@@ -148,8 +148,8 @@
 
       <h1 class="margin-top">按钮组演示</h1>
       <div class="margin-top-sm text-justify">
-        <a href="javascript:;" class="btn btn-sm line-gray">按钮</a>
-        <a href="javascript:;" class="btn btn-sm line-black radius">按钮</a>
+        <a href="javascript:;" class="btn small line-gray">按钮</a>
+        <a href="javascript:;" class="btn small line-black radius">按钮</a>
       </div>
     </div>
   </div>
