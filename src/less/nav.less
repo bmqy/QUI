@@ -2,16 +2,18 @@
 /*
  * @Author: bmqy
  * @Date: 2015-11-30 00:00:00
- * @LastEditTime: 2020-06-04 15:58:10
+ * @LastEditTime: 2020-06-10 11:30:59
  * @Description: PC端css模板：nav组件
  */
 
 .nav{
+  .clearfix;
   >a{
     padding: 0 20px;
     text-align: center;
     line-height: 45px;
-    display: inline-block;
+    display: block;
+    float: left;
     &:hover{
       text-decoration: none;
     }
@@ -20,6 +22,7 @@
     >a{
       width: 1%;
       display: table-cell;
+      float: none;
     }
   }
 }
