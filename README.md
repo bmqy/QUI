@@ -1,4 +1,4 @@
-# ibicn_ui
+# QUI
 
 ## Project setup
 ```
