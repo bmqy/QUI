@@ -67,6 +67,19 @@
             name="verifycode"
             id="verifycode"
           />
+          <img
+            src="https://adminv4.ibicn.com/include/func/captcha.jsp?rnd=79849"
+            alt="验证码"
+          />
+        </div>
+        <div class="form-group">
+          <label for="verifycode">验证短信</label>
+          <input
+            type="text"
+            class="verifycode"
+            name="verifycode"
+            id="verifycode"
+          />
           <button type="button" class="btn bg-red">获取验证码</button>
         </div>
         <div class="form-group">
