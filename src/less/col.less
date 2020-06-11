@@ -1,0 +1,160 @@
+// out: false
+/*
+ * @Author: bmqy
+ * @Date: 2015-11-30 00:00:00
+ * @LastEditTime: 2020-06-11 15:28:11
+ * @Description: PC端css模板：grid组件
+ */
+
+.row{
+  overflow: hidden;
+  //默认3列宫格
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12{
+    float: left;
+    position: relative;
+  }
+  .col-1{
+      width: 8.33333333%;
+  }
+  .col-2{
+      width: 16.66666667%;
+  }
+  .col-3{
+      width: 25%;
+  }
+  .col-4{ 
+      width: 33.33333333%;  
+  }
+  .col-5{ 
+      width: 41.66666667%;   
+  }
+  .col-6{ 
+      width: 50%;  
+  }
+  .col-7{
+      width: 58.33333333%; 
+  }
+  .col-8{
+      width: 66.66666667%;  
+  }
+  .col-9{
+      width: 75%;
+  }
+  .col-10{
+      width: 83.33333333%;
+  }
+  .col-11{
+      width: 91.66666667%;
+  }
+  .col-12{
+      width: 100%;
+  }
+  //间距
+  &.row-gap{
+    .clearfix;
+    margin-left: -15px;
+    [class~=col-1],
+    [class~=col-2],
+    [class~=col-3],
+    [class~=col-4],
+    [class~=col-5],
+    [class~=col-6],
+    [class~=col-7],
+    [class~=col-8],
+    [class~=col-9],
+    [class~=col-10],
+    [class~=col-11],
+    [class~=col-12],
+    [class*=col-]{
+      padding-left: 15px;
+      padding-bottom: 15px;
+    }
+    &-mini{
+      margin-left: -5px;
+      [class~=col-1],
+      [class~=col-2],
+      [class~=col-3],
+      [class~=col-4],
+      [class~=col-5],
+      [class~=col-6],
+      [class~=col-7],
+      [class~=col-8],
+      [class~=col-9],
+      [class~=col-10],
+      [class~=col-11],
+      [class~=col-12],
+      [class*=col-]{
+        padding-left: 5px;
+        padding-bottom: 5px;
+      }
+    }
+    &-small{
+      margin-left: -10px;
+      [class~=col-1],
+      [class~=col-2],
+      [class~=col-3],
+      [class~=col-4],
+      [class~=col-5],
+      [class~=col-6],
+      [class~=col-7],
+      [class~=col-8],
+      [class~=col-9],
+      [class~=col-10],
+      [class~=col-11],
+      [class~=col-12],
+      [class*=col-]{
+        padding-left: 10px;
+        padding-bottom: 10px;
+      }
+    }
+    &-large{
+      margin-left: -20px;
+      [class~=col-1],
+      [class~=col-2],
+      [class~=col-3],
+      [class~=col-4],
+      [class~=col-5],
+      [class~=col-6],
+      [class~=col-7],
+      [class~=col-8],
+      [class~=col-9],
+      [class~=col-10],
+      [class~=col-11],
+      [class~=col-12],
+      [class*=col-]{
+        padding-left: 20px;
+        padding-bottom: 20px;
+      }
+    }
+    &-bigger{
+      margin-left: -30px;
+      [class~=col-1],
+      [class~=col-2],
+      [class~=col-3],
+      [class~=col-4],
+      [class~=col-5],
+      [class~=col-6],
+      [class~=col-7],
+      [class~=col-8],
+      [class~=col-9],
+      [class~=col-10],
+      [class~=col-11],
+      [class~=col-12],
+      [class*=col-]{
+        padding-left: 30px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+}

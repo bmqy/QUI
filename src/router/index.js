@@ -17,49 +17,55 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/demo/Text.vue")
+      import("../views/demo/Text.vue")
   },
   {
     path: "/button",
     name: "按钮",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/demo/Button.vue")
+      import("../views/demo/Button.vue")
+  },
+  {
+    path: "/col",
+    name: "栅格",
+    component: () =>
+      import("../views/demo/Col.vue")
   },
   {
     path: "/list",
     name: "列表",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/demo/List.vue")
+      import("../views/demo/List.vue")
   },
   {
     path: "/grid",
     name: "宫格",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/demo/Grid.vue")
+      import("../views/demo/Grid.vue")
   },
   {
     path: "/form",
     name: "表单",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/demo/Form.vue")
+      import("../views/demo/Form.vue")
   },
   {
     path: "/table",
     name: "表格",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/demo/Table.vue")
+      import("../views/demo/Table.vue")
   },
   {
     path: "/panel",
     name: "面板",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/demo/Panel.vue")
+      import("../views/demo/Panel.vue")
   },
   {
     path: "/tab",
     name: "tab",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/demo/Tab.vue")
+      import("../views/demo/Tab.vue")
   }
 ];
 

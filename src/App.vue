@@ -6,6 +6,7 @@
           <router-link to="/">首页</router-link>
           <router-link to="/text">文本</router-link>
           <router-link to="/button">按钮</router-link>
+          <router-link to="/col">栅格</router-link>
           <router-link to="/list">列表</router-link>
           <router-link to="/grid">宫格</router-link>
           <router-link to="/form">表单</router-link>
