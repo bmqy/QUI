@@ -2,7 +2,7 @@
 /*
  * @Author: bmqy
  * @Date: 2015-11-30 00:00:00
- * @LastEditTime: 2020-06-11 15:28:11
+ * @LastEditTime: 2020-06-11 16:28:36
  * @Description: PC端css模板：grid组件
  */
 
@@ -154,6 +154,27 @@
       [class*=col-]{
         padding-left: 30px;
         padding-bottom: 30px;
+      }
+    }
+  }
+  //边框
+  &.border{    
+    [class~=col-1],
+    [class~=col-2],
+    [class~=col-3],
+    [class~=col-4],
+    [class~=col-5],
+    [class~=col-6],
+    [class~=col-7],
+    [class~=col-8],
+    [class~=col-9],
+    [class~=col-10],
+    [class~=col-11],
+    [class~=col-12],
+    [class*=col-]{
+      .border(left, solid, @baseBorderColor);
+      &:first-child{
+        .no-border;
       }
     }
   }

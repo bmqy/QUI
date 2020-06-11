@@ -2,7 +2,14 @@
   <div class="container-full">
     <div class="container w1200">
       <h1>宮格演示</h1>
-      <div class="row row-gap">
+      <div class="row border">
+        <div v-for="(item, index) in 12" :key="index" :class="[`col-1`]">
+          <div class="bg-gray padding-mini">
+            {{ item }}
+          </div>
+        </div>
+      </div>
+      <div class="row row-gap margin-top">
         <div v-for="(item, index) in 12" :key="index" :class="[`col-1`]">
           <div class="bg-gray">
             {{ item }}
