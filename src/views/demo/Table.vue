@@ -3,7 +3,7 @@
     <div class="container w1200">
       <h1>表格演示</h1>
 
-      <table class="table striped block">
+      <table class="table striped table-full">
         <thead>
           <tr>
             <th>序号</th>

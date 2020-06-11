@@ -3,7 +3,7 @@
 /*
  * @Author: bmqy
  * @Date: 2015-11-30 00:00:00
- * @LastEditTime: 2020-06-10 15:33:05
+ * @LastEditTime: 2020-06-11 11:44:40
  * @Description: PC端css模板：table表格
  */
 
@@ -33,17 +33,25 @@ table {
     .border;
     line-height: 1.42857143;
   }
-  
-  &.block{
+  //撑满容器
+  &.table-full{
     width: 100%;
-    display: table;
   }
+  //条纹样式
   &.striped{
     > tbody > tr:nth-of-type(odd) {
         background-color: #f8f8f8;
+        color: inherit;
     }
   }
-
+  //悬停样式
+  &.hover{
+    > tbody > tr:hover {
+        background-color: #f5f5f5;
+        color: inherit;
+    }
+  }
+  //无边框
   &.no-border {
     .no-border;
     th,
