@@ -6,7 +6,13 @@
       <form action="" class="margin-top">
         <div class="form-group">
           <label for="username">用户名</label>
-          <input type="text" name="username" id="username" />
+          <input
+            type="text"
+            name="username"
+            id="username"
+            value="test"
+            readonly
+          />
         </div>
         <div class="form-group">
           <label for="password">密码</label>
@@ -24,6 +30,16 @@
           <span class="input-tips text-gray"
             >一段辅助说明一段辅助说明一段辅助说明</span
           >
+        </div>
+        <div class="form-group">
+          <label for="mobile">手机号码</label>
+          <input
+            type="text"
+            name="mobile"
+            id="mobile"
+            value="13800000000"
+            disabled
+          />
         </div>
         <div class="form-group">
           <label for="education">学历</label>
@@ -46,7 +62,8 @@
             ><input type="checkbox" name="favorite" id="favorite" /> 体育</label
           >
           <label class="checkbox-inline"
-            ><input type="checkbox" name="favorite" id="favorite" /> 唱歌</label
+            ><input type="checkbox" disabled name="favorite" id="favorite" />
+            唱歌</label
           >
           <label class="checkbox-inline"
             ><input type="checkbox" name="favorite" id="favorite" /> 电影</label
