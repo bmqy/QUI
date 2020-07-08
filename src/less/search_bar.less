@@ -3,7 +3,7 @@
 /*
  * @Author: bmqy
  * @Date: 2015-11-30 00:00:00
- * @LastEditTime: 2020-06-18 17:35:51
+ * @LastEditTime: 2020-07-08 10:41:43
  * @Description: PC端css模板：搜索条组件
  */
 
@@ -11,10 +11,22 @@
 .search-bar {
   &-select{
     height: 34px;
-    padding: 6px 10px;
+    padding: 6px 24px 6px 10px;
     float: left;
     .no-border;
-    outline: none;
+    outline: none;    
+    /*将默认的select选择框样式清除*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    /*在选择框的最右侧中间显示小箭头图片*/
+    background-image: url("../assets/icon/jiantou-xia.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    /*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+    &::-ms-expand {
+      display: none;
+    }
   }
   &-input{
     height: 34px;

@@ -59,4 +59,5 @@ export default {
 
 <style lang="less">
 @import url(./less/public.less);
+@import url(//at.alicdn.com/t/font_1929927_27rcf2y9pjf.css);
 </style>
