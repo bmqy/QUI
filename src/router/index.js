@@ -34,6 +34,11 @@ const routes = [
     component: () => import("../views/demo/List.vue")
   },
   {
+    path: "/article",
+    name: "文章",
+    component: () => import("../views/demo/Article.vue")
+  },
+  {
     path: "/grid",
     name: "宫格",
     component: () => import("../views/demo/Grid.vue")

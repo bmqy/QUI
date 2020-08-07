@@ -1,0 +1,45 @@
+// out: false
+
+/*
+ * @Author: bmqy
+ * @Date: 2015-11-30 00:00:00
+ * @LastEditTime: 2020-08-07 18:53:02
+ * @Description: PC端css模板：分页组件
+ */
+
+/* pages */
+.pages {
+  a {
+      margin : 0 2px;
+      padding: 5px 11px;
+      display: inline-block;
+      border : 1px solid #e5e5e5;
+      text-decoration : none;
+      &:hover,
+      &.active{
+          background-color: #ed2f3c;
+          border: 1px solid #ed2f3c;
+          color: #fff;
+      }
+      &.active {
+          cursor: default;
+      }
+      &.disabled {
+          background-color: #f0f0f0;
+          border: 1px solid #f0f0f0;
+          color: #ccc;
+          cursor: default;
+      }
+  }
+  span {
+      margin : 0 2px;
+      padding: 5px 11px;
+      display: inline-block;
+      border : 1px solid #e5e5e5;
+      background-color: #ed2f3c;
+      border: 1px solid #ed2f3c;
+      color: #fff;
+      cursor: default;
+      text-decoration: none;
+  }
+}

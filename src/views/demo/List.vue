@@ -1,6 +1,13 @@
 <template>
   <div class="container-full">
     <div class="container w1200">
+      <div class="position">
+        当前位置：<router-link to="./">首页</router-link> &gt;
+        <router-link to="./list">列表</router-link> &gt;
+        <span>列表演示</span>
+      </div>
+    </div>
+    <div class="container w1200">
       <h1>列表演示</h1>
       <div class="grid">
         <div class="grid-item">
@@ -138,6 +145,20 @@
               </div>
             </li>
           </ul>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="pages">
+          <a href="#" class="disabled">首页</a>
+          <a href="#" class="disabled">上一页</a>
+          <span>1</span>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">下一页</a>
+          <a href="#">尾页</a>
         </div>
       </div>
     </div>

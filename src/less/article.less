@@ -3,35 +3,54 @@
 /*
  * @Author: bmqy
  * @Date: 2015-11-30 00:00:00
- * @LastEditTime: 2020-04-02 10:44:13
+ * @LastEditTime: 2020-08-07 19:24:34
  * @Description: PC端css模板：article详情组件
  */
 
 /* article */
 .article {
-  font-size: 14px;
-  line-height: 24px;
-  color: #333;
-  img,
-  embed {
-    max-width: 100%;
+  &-head{
+    margin-bottom: @large;
+    padding-bottom: @normal;
+    .border(bottom);
+    &-title{
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.15em;
+      line-height: 2;
+    }
   }
-  .img-block {
-    margin: 0 auto;
-    display: block;
-  }
-  .img-title {
-    display: block;
+  &-meta{
     text-align: center;
+    &-item{
+      padding: 0 15px;
+      display: inline-block;
+      font-size: 0.9em;
+    }
   }
-  p {
-    margin-bottom: 14px;
-    text-indent: 2em;
+  &-body{
     font-size: 14px;
-    line-height: 30px;
-  }
-  ul,
-  ol {
-    text-indent: 2em;
+    line-height: 24px;
+    color: #333;
+    img,
+    embed {
+      max-width: 100%;
+    }
+    .img-block {
+      margin: 0 auto;
+      display: block;
+    }
+    .img-title {
+      display: block;
+      text-align: center;
+    }
+    p {
+      text-indent: 2em;
+      line-height: 30px;
+    }
+    ul,
+    ol {
+      text-indent: 2em;
+    }
   }
 }
