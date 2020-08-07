@@ -11,7 +11,7 @@ const routes = [
     component: Home
   },
   {
-    path: "/QUI/text",
+    path: "/QUI/?page=text",
     name: "文本",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
@@ -19,42 +19,42 @@ const routes = [
     component: () => import("../views/demo/Text.vue")
   },
   {
-    path: "/QUI/button",
+    path: "/QUI/?page=button",
     name: "按钮",
     component: () => import("../views/demo/Button.vue")
   },
   {
-    path: "/QUI/row",
+    path: "/QUI/?page=row",
     name: "栅格",
     component: () => import("../views/demo/Row.vue")
   },
   {
-    path: "/QUI/list",
+    path: "/QUI/?page=list",
     name: "列表",
     component: () => import("../views/demo/List.vue")
   },
   {
-    path: "/QUI/grid",
+    path: "/QUI/?page=grid",
     name: "宫格",
     component: () => import("../views/demo/Grid.vue")
   },
   {
-    path: "/QUI/form",
+    path: "/QUI/?page=form",
     name: "表单",
     component: () => import("../views/demo/Form.vue")
   },
   {
-    path: "/QUI/table",
+    path: "/QUI/?page=table",
     name: "表格",
     component: () => import("../views/demo/Table.vue")
   },
   {
-    path: "/QUI/panel",
+    path: "/QUI/?page=panel",
     name: "面板",
     component: () => import("../views/demo/Panel.vue")
   },
   {
-    path: "/QUI/tab",
+    path: "/QUI/?page=tab",
     name: "tab",
     component: () => import("../views/demo/Tab.vue")
   }
