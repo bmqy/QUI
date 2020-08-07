@@ -6,12 +6,12 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/QUI/",
+    path: "/",
     name: "首页",
     component: Home
   },
   {
-    path: "/QUI/text",
+    path: "/text",
     name: "文本",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
@@ -19,42 +19,42 @@ const routes = [
     component: () => import("../views/demo/Text.vue")
   },
   {
-    path: "/QUI/button",
+    path: "/button",
     name: "按钮",
     component: () => import("../views/demo/Button.vue")
   },
   {
-    path: "/QUI/row",
+    path: "/row",
     name: "栅格",
     component: () => import("../views/demo/Row.vue")
   },
   {
-    path: "/QUI/list",
+    path: "/list",
     name: "列表",
     component: () => import("../views/demo/List.vue")
   },
   {
-    path: "/QUI/grid",
+    path: "/grid",
     name: "宫格",
     component: () => import("../views/demo/Grid.vue")
   },
   {
-    path: "/QUI/form",
+    path: "/form",
     name: "表单",
     component: () => import("../views/demo/Form.vue")
   },
   {
-    path: "/QUI/table",
+    path: "/table",
     name: "表格",
     component: () => import("../views/demo/Table.vue")
   },
   {
-    path: "/QUI/panel",
+    path: "/panel",
     name: "面板",
     component: () => import("../views/demo/Panel.vue")
   },
   {
-    path: "/QUI/tab",
+    path: "/tab",
     name: "tab",
     component: () => import("../views/demo/Tab.vue")
   }
